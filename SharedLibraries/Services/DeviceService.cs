@@ -16,7 +16,7 @@ namespace SharedLibraries.Services
 
         private static readonly string _connweat = "http://api.weatherstack.com/current?access_key=e699857f79960f12fc50911e6203d374&query=Koping";
         private static HttpClient _client = new HttpClient();
-        private static readonly Random rnd = new Random();
+      
         public static async Task SendMessageAsync(DeviceClient deviceClient)
         {
             while (true)
