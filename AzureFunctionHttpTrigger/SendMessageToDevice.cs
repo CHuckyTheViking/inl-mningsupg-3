@@ -29,7 +29,7 @@ namespace AzureFunctionHttpTrigger
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
 
             var data = JsonConvert.DeserializeObject<BodyMessageModel>(requestBody);
-
+         
             targetDeviceId = targetDeviceId ?? data?.TargetDeviceId;
             message = message ?? data?.Message;
 
